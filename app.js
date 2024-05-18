@@ -15,7 +15,7 @@ const locationn =document.querySelector(".location");
 
 const getWeather = async (city) => {
   //get your own api_key by creating an account on https://openweathermap.org/api
-  const API_KEY = "";
+  const API_KEY = "80a71090118c3256b0d2cf52c04232a3";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
   const response = await fetch(url);
   const data = await response.json();
